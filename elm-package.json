@@ -1,0 +1,11 @@
+{
+    "version": "1.0.0",
+    "summary": "A minimal functional core for relational programming",
+    "repository": "https://github.com/ndr-qef/microKanren.elm.git",
+    "license": "BSD3",
+    "source-directories": [ "src" ],
+    "exposed-modules": [ "MicroKanren" ],
+    "dependencies": {
+        "elm-lang/core": "1.1.1 <= v < 2.0.0"
+    }
+}
