@@ -6,7 +6,7 @@ module MicroKanren
   , Goal
   , unit, mzero
   , walk, ext_s, unify
-  , callFresh, (===), conj, disj
+  , callFresh, identical, conj, disj
   , mplus, bind
   ) where
 
@@ -90,8 +90,8 @@ bind s g =
     Mature sc stream -> mplus (g sc) (bind stream g)
 
 
-(===) : Term a -> Term a -> Goal a
-(===) u v =
+identical : Term a -> Term a -> Goal a
+identical u v =
   \sc -> case unify u v sc.s of
            Just s' -> unit {sc | s <- s' }
            Nothing -> mzero
