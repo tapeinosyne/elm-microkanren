@@ -1,4 +1,4 @@
-module MicroKanren.Operators(..) where
+module MicroKanren.Operators exposing (..)
 
 {-| Infix operators for μKanren
 

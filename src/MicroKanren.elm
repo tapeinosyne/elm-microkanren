@@ -1,4 +1,4 @@
-module MicroKanren
+module MicroKanren exposing
   ( Var, Term(LVar, LVal, Pair)
   , Substitution, State
   , Stream(Empty, Immature, Mature)
@@ -7,7 +7,7 @@ module MicroKanren
   , mplus, bind
   , walk, extend, unify
   , callFresh, identical, conjoin, disjoin
-  ) where
+  )
 
 {-| μKanren provides a minimal, independent core for relational programming in Elm,
 as described by Hemann and Friedmann in [µKanren: A Minimal Functional Core
