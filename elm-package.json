@@ -1,7 +1,7 @@
 {
     "version": "1.0.1",
     "summary": "A minimal functional core for relational programming",
-    "repository": "https://github.com/ndr-qef/microkanren.elm.git",
+    "repository": "https://github.com/tapeinosyne/elm-microkanren.git",
     "license": "BSD3",
     "source-directories": [
         "src"
